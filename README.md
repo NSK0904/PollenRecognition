@@ -46,7 +46,7 @@ pip install -r requirements.txt
 To begin, clone the repository to your local machine:  
 
 ```
-git clone <https://github.com/NSK0904/PollenRecognition>
+git clone https://github.com/NSK0904/PollenRecognition
 cd .\PollenRecognition\
 ```
 
