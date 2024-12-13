@@ -46,8 +46,8 @@ pip install -r requirements.txt
 To begin, clone the repository to your local machine:  
 
 ```
-git clone <repository-url>
-cd <repository-folder>
+git clone <https://github.com/NSK0904/PollenRecognition>
+cd .\PollenRecognition\
 ```
 
 ### Install Dependencies
@@ -98,4 +98,33 @@ http://127.0.0.1:5000
   
 - Click on Run Inference to start the process.
 
+### Monitor Logs  
 
+As the inference task runs, you can monitor the logs in the provided text area. The logs will display:  
+
+- Progress of the task
+  
+- Any errors or completion messages
+
+### View Results (On Webpage or CSV File)
+
+Once the task is completed:  
+
+- A Show Results button will appear. Click on it to view the inference results in a tabular format.
+
+- The results are saved in the specified CONFIDENCE_LOG_PATH as a CSV file.
+
+### Troubleshooting 
+
+- Invalid Test Folder Path: Ensure the folder exists and is accessible.
+
+- Invalid Model File: Only .onnx files are supported. Verify the file format.
+
+- Results Not Saved: Ensure the specified CONFIDENCE_LOG_PATH is a valid and writable location.
+
+
+## Additional Information (modelCPU Folder)
+
+- To learn how the model.onnx was created, refer to the model architecture in model_arch.py.
+
+- The CPU model is referred to as fine_tuned_model_epoch_1000.pth
