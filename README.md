@@ -39,6 +39,63 @@ pip install -r requirements.txt
 
 -scikit-image: For image processing.  
 
+# How to Run Application  
 
+### Clone the Repository  
+
+To begin, clone the repository to your local machine:  
+
+```
+git clone <repository-url>
+cd <repository-folder>
+```
+
+### Install Dependencies
+
+Ensure you have Python installed (version >= 3.7.1). Then, install the required dependencies listed in the requirements.txt file:  
+
+```
+pip install -r requirements.txt
+```
+
+### Update the Log Path
+
+Before running the application, you need to configure the path where the inference results will be saved. Open web_app.py and set the CONFIDENCE_LOG_PATH variable to a valid path where the .csv file can be created. For example:
+
+```
+CONFIDENCE_LOG_PATH = r"D:/log.csv"
+```
+Ensure that the directory exists or create it before proceeding.  
+
+### Prepare Your Files
+
+- Test Folder: Organize your test images in the specified format, ensuring they contain paired files (e.g., rec0 and rec1).
+  
+- ONNX Model File: Ensure you have a valid ONNX model file to use for inference.
+
+
+### Run the Flask Application
+
+Start the Flask server by running the following command in the project directory:  
+
+```
+python web_app.py
+```
+
+### Access the Web Application
+
+Once the Flask server is running, open your web browser and navigate to:  
+
+```
+http://127.0.0.1:5000
+```
+
+### Upload Files and Run Inference
+
+- Enter the path to the test folder in the input field. (For example: D:\test_folder)
+  
+- Upload your ONNX model file.
+  
+- Click on Run Inference to start the process.
 
 
