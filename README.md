@@ -1,5 +1,6 @@
 # Pollen Recognition
-Pollen Recognition from a Pair of Holographic Images__
+Pollen Recognition from a Pair of Holographic Images   
+
 ![image](https://github.com/user-attachments/assets/9d4b0fd1-fc30-4d9c-8e4f-f47a417cfd72)
 
 This project is a web application for recognizing pollen from pairs of holographic images using a machine learning model. The application uses OpenVINO for model inference and Flask to serve a web-based interface for user interaction.
