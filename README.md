@@ -7,10 +7,14 @@ This project is a web application for recognizing pollen from pairs of holograph
 
 # Features
 
--Upload a folder containing test images and an ONNX model file.
--Run inference on pairs of images (e.g., rec0 and rec1) using OpenVINO.
--Monitor logs in real-time during the inference process.
--View the results in a tabular format on the web interface.
+-Upload a folder containing test images and an ONNX model file.  
+
+-Run inference on pairs of images (e.g., rec0 and rec1) using OpenVINO.  
+
+-Monitor logs in real-time during the inference process.  
+
+-View the results in a tabular format on the web interface.  
+
 -Save inference results to a CSV file.
 
 # Requirements
@@ -25,11 +29,16 @@ pip install -r requirements.txt
 ```
 
 ## Key Dependencies:
--flask: For the web interface.
--numpy: For numerical operations.
--pandas: For handling results.
--openvino: For running the ONNX model inference.
--scikit-image: For image processing.
+-flask: For the web interface.  
+
+-numpy: For numerical operations.  
+
+-pandas: For handling results.  
+
+-openvino: For running the ONNX model inference.  
+
+-scikit-image: For image processing.  
+
 
 
 
